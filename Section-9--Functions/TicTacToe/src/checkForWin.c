@@ -9,7 +9,7 @@ int checkForWin(int turn, char *gameArray)
 	int checked = 0;
 	int playerNumber = checkPlayer(turn);
 	char playerMark = getPlayerMark(turn);
-	if (gameArray[5] == playerMark) /* check center */
+	if (arrayCheck(5, gameArray, playerMark) == 1) /* check center */
 	{
 		for (int i = 0; i < 4; i++)
 		{

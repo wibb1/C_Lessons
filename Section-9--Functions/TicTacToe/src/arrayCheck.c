@@ -6,5 +6,5 @@
 // **********************************************************************/
 int arrayCheck(int spotValue, char *gameArray, char playerMark)
 {
-	return gameArray[spotValue] == playerMark ? 1 : 0;
+	return *(gameArray+spotValue) == playerMark ? 1 : 0;
 }
