@@ -135,6 +135,8 @@ void PointersToStructures()
   printf("Today's date is %i/%i/%.2i.\n", pDate->month, pDate->day, pDate->year);
 }
 
+int StructPointers();
+
 int main()
 {
   printf("Welcome to Structures\n\n");
@@ -143,5 +145,6 @@ int main()
   arrayInStruct();
   nestedStructs();
   PointersToStructures();
+  StructPointers();
   return (0);
 }
