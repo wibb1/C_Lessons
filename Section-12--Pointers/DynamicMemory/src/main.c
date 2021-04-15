@@ -8,7 +8,7 @@ int main()
   char *str = NULL;
   printf("Enter the number of characters: \n");
   scanf("%d", &n);
-  str = (char *)malloc(n * sizeof(char));
+  str = (char *)malloc((n+1) * sizeof(char));
   if (str != NULL)
   {
     printf("Enter your string: \n");
