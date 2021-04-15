@@ -1,8 +1,21 @@
 #include <stdio.h>
 
+void square(long *number)
+{
+  *number = *number * *number;
+}
+
 int main()
 {
-	printf("Hello World!\n");
+  long number = 2;
+  for (int i = 0; i < 5; i++)
+  {
+    printf("The square of %ld", number);
+    square(&number);
+    printf(" is %ld\n", number);
+  }
 
-	return (0);
+  printf("The End!\n");
+
+  return (0);
 }
