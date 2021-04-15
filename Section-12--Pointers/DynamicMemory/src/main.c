@@ -1,8 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main()
 {
-	printf("Hello World!\n");
+  int n;
+  char *str = NULL;
+  printf("Enter the number of characters: \n");
+  scanf("%d", &n);
+  str = (char *)malloc(n * sizeof(char));
+  if (str != NULL)
+  {
+    printf("Enter your string: \n");
+    scanf(" ");
+    gets(str);
+  }
 
-	return (0);
+  printf("%s\n", str);
+
+  free(str);
+  str = NULL;
+  return (0);
 }
